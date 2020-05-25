@@ -1,3 +1,10 @@
+//import java.awt.*;
+import java.awt.image.*;
+//import java.io.*;
+///import java.util.*;
+//import javax.imageio.*;
+//import javax.swing.*;
+
 public abstract class Species
 {
     public String name;
@@ -5,13 +12,15 @@ public abstract class Species
     public int health;
     public int size;
     public boolean isAlive;
+    BufferedImage image;
 
     public boolean danger;
     public int damage;
 
     public Pair position;
+    public int speed;
 
-    public abstract void update(Species s);
+    public abstract void update(Pair lowBnds, Pair highBnds);
 
 }
 ///////////////////////////////////
